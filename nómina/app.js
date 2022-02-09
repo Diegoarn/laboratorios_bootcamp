@@ -1,4 +1,4 @@
-const empleado = {bruto: 28000, hijos: 3, pagas: 14};
+const empleado = {bruto: 28000, hijos: 0, pagas: 14};
 console.log("Sueldo bruto " + empleado.bruto + "€");
 
 

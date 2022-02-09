@@ -1,19 +1,23 @@
-const product = {count: 5, price: 13.95, type: "libro"};
+const product = {count: 5, price: 13.95, type: "alimento"};
 
 
 if (product.count > 0) {total = product.count * product.price} 
     else { total = 0};
 console.log("Total sin iva " + total + "€")
-
-let tipoiva ;
+let valor1 = document.getElementById("caja1").innerText ;
+console.log(valor1);
+document.getElementById("caja1").textContent = "Total sin iva " + total + "€";
+let tipoIva ;
 
 switch (product.type) {
-    case "alimento": tipoiva = 0.10; break; 
-    case "libro": tipoiva = 0.04; break;
-    default: tipoiva = 0.21;
+    case "alimento": tipoIva = 0.10;
+
+     break; 
+    case "libro": tipoIva = 0.04; break;
+    default: tipoIva = 0.21;
 };
-console.log("Tipo de IVA " + tipoiva * 100 + "%");
-const totaliva = (total * tipoiva);
+console.log("Tipo de IVA " + tipoIva * 100 + "%");
+const totaliva = (total * tipoIva);
 console.log("IVA " + totaliva + "€");
 
 
