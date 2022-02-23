@@ -1,0 +1,49 @@
+.sub {
+    display: flex;
+    align-items: center;
+    color: rgb(61, 61, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 16px;
+
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(73, 73, 73);
+}
+
+.btn {
+    width: 20%;
+    height: 30%;
+    background-color: rgba(207, 207, 207, 0.63);
+    margin-top: 16px;
+    font-size: large;
+}
+
+body {
+    margin-left: 56px;
+}
+ 
+.container {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+}
+
+.list {
+    width: 28%;
+    border: 1px solid gray;
+    background-color: rgb(194, 194, 194);
+}
+
+.input {
+    float: right;
+    margin-left: 16px;
+}
+
+label {
+    margin-left: 12px;
+}

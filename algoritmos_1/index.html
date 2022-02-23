@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de la compra</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <header>
+    <h2> Carrito de la compra</h2>
+  </header>
+
+  <div id="product-list-description" class="list">
+  </div>
+
+  <button onclick="resultTotal()" class="btn">calcular</button>
+  <div class="sub">
+    <h4>Subtotal: </h4>
+    <label id="subTotal"></label>
+  </div>
+  <div class="sub">
+    <h4>IVA: </h4>
+    <label id="taxes"></label>
+  </div>
+  <div class="sub">
+    <h3>Total: </h3>
+    <label id="total"></label>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
