@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 59);
+    padding-left: 25px;
+    margin-right: 16px;
+    align-items: center;
+}
+.ecr {
+    padding: auto;
+    margin-left: 16px;
+}
