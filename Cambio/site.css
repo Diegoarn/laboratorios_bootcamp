@@ -1,0 +1,25 @@
+
+
+
+.bot {
+    color: rgb(104, 104, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 36px;
+    padding-bottom: 24px;
+}
+
+.cam {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 36px;
+    
+}
+
+.enl {
+    display: flex;
+    align-items: center;
+}
+
+.e2 {
+    margin-left: 8px;
+}
+

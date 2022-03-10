@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <div class="bot">
+        <h3>Calculadora de cambio</h3>
+        <h4>Pago:</h4>
+        <input value="" type="number" min="1" step="any" id="pago">
+        <h4>Factura:</h4>
+        <input value="" type="number" min="1" step="any" id="factura">
+    </div>
+ 
+    <div class="cam">
+        <button onclick="calculateChange()">Calcular</button>
+        <div class="enl">
+            <h4>Cambio:</h4>
+            <label id="cambios" class="e2"></label>
+        </div>
+      
+        <br>
+        <label id="monedas" class="e3"></label>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
