@@ -1,3 +1,4 @@
+
 function resultTotal () {
     var total = 0;
     var typeRoom = document.getElementById("type").value;
@@ -8,6 +9,7 @@ function resultTotal () {
         if (spa.checked == true) {
             total = total + 20;
         }
+    
         var occupancy = document.getElementById("personas").value;
         if ( occupancy != "0") {
             total = resultOccupancy(total, occupancy);

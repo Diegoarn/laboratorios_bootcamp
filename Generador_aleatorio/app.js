@@ -12,4 +12,3 @@ while (random.length < 10) {
 
 console.log(random);
 
-

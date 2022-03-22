@@ -28,22 +28,28 @@ body {
 .container {
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 300px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 16px;
+   
+   
 }
 
 .list {
-    width: 28%;
+    width: 30%;
     border: 1px solid gray;
     background-color: rgb(194, 194, 194);
+    
 }
 
 .input {
     float: right;
     margin-left: 16px;
+
+  
 }
 
 label {
     margin-left: 12px;
 }
+
