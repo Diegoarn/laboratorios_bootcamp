@@ -33,10 +33,14 @@ const validationsSchema = {
         validator: Validators.required,
         message: 'Campo requerido',
       },
-      // {
-      //   validator: isNumber.validator,
-      //   message: 'Teléfono no valido',
-      // },
+      {
+        validator: isNumber.validator,
+        message: 'Teléfono no valido',
+      },
+      {
+        validator: Validators.pattern,
+        customArgs: { pattern: /^(6|7|8|9)\d{8}$/ },
+      },
     ],
 
     price: [
@@ -45,7 +49,7 @@ const validationsSchema = {
         message: 'Campo requerido',
       },
     ],
-    salesType: [
+    saleTypeIds: [
       {
         validator: Validators.required,
         message: 'Campo requerido',
@@ -63,12 +67,6 @@ const validationsSchema = {
         message: 'Campo requerido',
       },
     ],
-    // province: [
-    //   {
-    //     validator: Validators.required,
-    //     message: 'Campo requerido',
-    //   },
-    // ],
     squareMeter: [
       {
         validator: Validators.required,
@@ -92,10 +90,10 @@ const validationsSchema = {
         validator: Validators.required,
         message: 'Campo requerido',
       },
-      // {
-      //   validator: isUrl.validator,
-      //   message: 'Dirección no valida',
-      // },
+      {
+        validator: isUrl.validator,
+        message: 'Dirección no valida',
+      },
     ],
     mainFeatures: [
       {

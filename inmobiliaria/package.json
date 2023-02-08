@@ -25,6 +25,7 @@
     "@lemoncode/fonk-is-number-validator": "^1.1.2",
     "@lemoncode/fonk-is-url-validator": "^1.0.0",
     "@lemoncode/fonk-min-number-validator": "^1.2.0",
+    "@lemoncode/fonk-required-by-field-validator": "^1.0.1",
     "axios": "^0.19.0",
     "qs": "^6.9.1"
   }

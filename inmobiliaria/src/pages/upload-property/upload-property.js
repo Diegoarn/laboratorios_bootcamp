@@ -28,7 +28,7 @@ Promise.all([getSalesTypeList(), getProvinceList(), getEquipments()]).then(
     setCheckboxList(salesTypeList, 'saleTypes');
     setCheckboxList(equipmentsList, 'equipments');
     setOptionList(provinceList, 'province');
-    setEvents(salesTypeList, 'saleTypes');
+    setEvents(salesTypeList, 'saleTypeIds');
     setEvents(equipmentsList, 'equipmentIds');
   }
 );
@@ -39,7 +39,7 @@ let newProperty = {
   email: '',
   phone: '',
   price: '',
-  saleTypes: [],
+  saleTypeIds: [],
   address: '',
   city: '',
   provinceId: '',
@@ -255,6 +255,7 @@ onAddFile('add-image', (images) => {
 
 onSubmitForm('save-button', () => {
   formPropertyValidation.validateForm(newProperty).then((result) => {
+    console.log(result);
     onSetFormErrors(result);
     const apiNewProperty = mapPropertyToApi(newProperty);
     console.log(apiNewProperty);
