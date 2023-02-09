@@ -245,7 +245,13 @@
       "name": "Zaragoza"
     }
   ],
-  "contact": [],
+  "contact": [
+    {
+      "email": "hola@hola.es",
+      "message": "Hola",
+      "id": 1
+    }
+  ],
   "properties": [
     {
       "id": "1",

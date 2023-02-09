@@ -51,6 +51,11 @@ onUpdateField('email', (event) => {
   });
 });
 
+onUpdateField('message', (event) => {
+  const value = event.target.value;
+  contact = { ...contact, message: value };
+});
+
 onSubmitForm('contact-button', () => {
   console.log(contact);
   formValidation.validateForm(contact).then((result) => {

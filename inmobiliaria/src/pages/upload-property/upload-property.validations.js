@@ -34,12 +34,9 @@ const validationsSchema = {
         message: 'Campo requerido',
       },
       {
-        validator: isNumber.validator,
-        message: 'Teléfono no valido',
-      },
-      {
         validator: Validators.pattern,
         customArgs: { pattern: /^(6|7|8|9)\d{8}$/ },
+        message: 'Teléfono no valido',
       },
     ],
 
